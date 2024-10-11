@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function Welcome()
     {
-        return view('Welcome'); // Retorna a view 'Welcome'
+        return Inertia::render('Welcome'); // Renderiza o componente 'Welcome' com Inertia
     }
 
     public function DashBoard()
